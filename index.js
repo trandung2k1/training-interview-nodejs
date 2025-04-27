@@ -5,8 +5,13 @@ const port = 3000;
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
 app.get('/about', (req, res) => {
   res.send('About route!');
+});
+
+app.get('/contact', (req, res) => {
+  res.send('Contact route!');
 });
 
 app.listen(port, () => {
